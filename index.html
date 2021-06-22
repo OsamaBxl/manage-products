@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD App</title>
+</head>
+
+<body>
+    <!-- <h1 class="my-5 text-center text-light">Manage Products</h1> -->
+    <div class="wrapper">
+
+        <div class="container text-light my-4 shadow">
+
+            <h2 class="text-center">Add Product</h2>
+            <div class="productsForm  py-4">
+                <label>Product Name:</label>
+                <input type="text" id="productNameInput" class="form-control mb-2" placeholder="Name..."
+                    autocomplete="off">
+
+                <label>Product Price:</label>
+                <input type="number" id="productPriceInput" class="form-control mb-2" placeholder="Price...">
+
+                <label>Product Category:</label>
+                <input type="text" id="productCategoryInput" class="form-control mb-2" placeholder="Category..."
+                    autocomplete="off">
+
+                <label>Product Description:</label>
+                <textarea type="text" id="productDescInput" class="form-control mb-2"
+                    style="background-color:#463e78; border: none;color: #bcf6e0;"
+                    placeholder="Description here..."></textarea>
+
+                <button id="addBtn" class="btn btn-info mt-4 btn-block">Add</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid text-light p-5">
+        <h2 class="text-center text-light ">All Products</h2>
+        <div class="wrapper">
+            <header class="text-center text-light mb-4">
+                <div class="search">
+                    <input type="text" class="form-control m-auto" name="search" placeholder="Search Product..."
+                        autocomplete="off" onkeyup="searchProduct(this.value)">
+                </div>
+            </header>
+        </div>
+        <div id="showProducts" style="border: none; box-shadow: none;">
+            <table class="table border shadow text-center table-responsive-sm" style="background-color: #463e78">
+                <thead class="text-light">
+                    <tr class=" bg-secondary ">
+                        <th>Index</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Manage</th>
+                    </tr>
+                </thead>
+
+                <tbody class="table-striped" id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

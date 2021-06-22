@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+body{
+    background-color: #463e78;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.wrapper{
+    width: 100%;
+    max-width: 50%;
+    margin: auto;
+}
+.container{
+    /* border: 0.1px solid #a297e9;  */
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 1px 8px 20px 3px #303030 !important;
+    /* 1px ​8px 20px 3px #303030 !important */
+    background-color: #2a2643;
+}
+input,
+input[type=text],
+input[type=text]:focus,
+input[type=number],
+input[type=number]:focus{
+    border: none;
+    background-color: #463e78 ;
+    color: #bcf6e0;
+    font-size: 1.1rem;
+}
+
+table{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+.btn-info{
+    background-color: #7c70c2;
+    font-size: 1.2rem; 
+    border: none;
+}
+.btn-info:hover,
+.btn-info:focus{
+    background-color: #5b4fa6;
+    border: none;
+}
+
+.container-fluid{
+    background-color: #2a2643;
+}
+
+.deleteBtn, .editBtn{
+    background-color: transparent;
+    border: none;
+}
+
+@media screen and (max-width:1000px){
+    .wrapper{
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .wrapper{
+        max-width: 80%;
+    }
+}
