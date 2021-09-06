@@ -9,15 +9,12 @@ body {
   width: 100%;
   max-width: 50%;
   margin: auto;
-}
-.container {
-  /* border: 0.1px solid #a297e9;  */
+  background-color: #2a2643;
   border-radius: 5px;
   padding: 2rem;
   box-shadow: 1px 8px 20px 3px #303030 !important;
-  /* 1px ​8px 20px 3px #303030 !important */
-  background-color: #2a2643;
 }
+
 input,
 input[type="text"],
 input[type="text"]:focus,
