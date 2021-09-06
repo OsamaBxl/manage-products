@@ -19,7 +19,7 @@
         <div class="container text-light my-4 shadow">
 
             <h2 class="text-center">Add Product</h2>
-            <div class="productsForm  py-4">
+            <div class="productsForm  pt-4">
                 <label>Product Name:</label>
                 <input type="text" id="productNameInput" class="form-control mb-2" placeholder="Name..."
                     autocomplete="off">
@@ -37,13 +37,15 @@
                     placeholder="Description here..."></textarea>
 
                 <button id="addBtn" class="btn btn-info mt-4 btn-block">Add</button>
+
+                <h4 class="text-danger pt-4 errorMsg">All fields are required</h4>
             </div>
         </div>
 
 
     </div>
 
-    <div class="container-fluid text-light p-5">
+    <div class="container-fluid text-light p-5 displayAllProducts">
         <h2 class="text-center text-light ">All Products</h2>
         <div class="wrapper">
             <header class="text-center text-light mb-4">
@@ -72,6 +74,12 @@
             </table>
         </div>
     </div>
+    <div class="container displayErrorMsg">
+        <h1 class="my-5 text-center  alert alert-secondary p-4">Products List Is Empty</h1>
+    </div>
+
+
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
